@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+    <title>Assignment8</title>
+
+  <style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:"Playwrite DE SAS", cursive;    
+    }
+  /* Navbar */
+ nav{
+    width: 100%;
+    height: 80px;
+    background-color: #F0E9B6;
+    color:#285A48;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ /* Footer */
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: #F0E9B6;
+    color: #285A48;
+    font-size: 35px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* text box */
+section{
+    width: 400px;
+    height: 280px;
+    padding: 30px;
+    background:#7B542F;
+    color: white;
+    border-radius: 13px;
+    position: absolute;
+    top: 150px;
+    right: 230px;
+    font-size: 11px;
+    animation-name: box;
+    animation-timing-function: ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+}
+section:hover{
+    animation-play-state: paused;
+  
+}
+@keyframes box {
+    0%{background-color: #A47251;
+
+    }
+    50%{background-color: #6E5034;
+
+    }
+    100%{background-color: #B6771D;
+
+    }
+}
+
+/* animated box */
+div {
+  width: 380px;
+  height: 380px;
+  position: absolute;
+  top: 80px;
+  z-index: 9999;
+  background-color: #97B067;
+  -webkit-animation: squareToCircle 2s 1s infinite alternate;
+}
+
+@-webkit-keyframes squareToCircle {
+    0% {
+      border-radius: 0 0 0 0;
+      background: #004030;
+      transform: rotate(0deg);
+    }
+    25% {
+      border-radius: 50% 0 0 0;
+      background: #427A43;
+      transform: rotate(45deg);
+    }
+    50% {
+      border-radius: 50% 50% 0 0;
+      background: #4A9782;
+      transform: rotate(90deg);
+    }
+    75% {
+      border-radius: 50% 50% 50% 0;
+      background: #2F6B3F;
+      transform: rotate(135deg);
+    }
+    100% {
+      border-radius: 50% 50% 50% 50%;
+      background: #004030;
+      transform: rotate(180deg);
+    }
+
+}
+  </style>
+
+</head>
+<body>
+<!-- Navbar -->
+<nav>
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-house"></i>
+    <i class="fa-solid fa-circle-user"></i>
+</nav> 
+
+<!-- animated box -->
+<div></div>
+
+<!-- text box -->
+<section>
+    <h1>Hello, Iam Frontend<br> Developer</h1>
+    <p>Lorem ipsum dolor adipisicing elit.tempora Aliquid atque perferendis ullam. Doloremque perspiciatis perferendis quis tenetur itaque vel, nobis cumque rerum alias accusamus dolorem voluptas nisi mollitia nihil fugiat, perferendis ullam. Doloremque perspiciatis perferendis ullamnobis cumque rerum alias accusamus dolorem voluptas nisi mollitia nihil fugiat, accusantium unde asperiores, quasi eos excepturi! Accusamus </p>
+</section>
+
+<!-- Footer -->
+<footer> &copy;Hana Mohamed</footer>
+
+
+</body>
+</html>
